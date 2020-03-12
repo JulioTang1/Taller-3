@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Clínica de Mascotas</title>
+  </head>
+  <body>
+
+
+
+
+
+<div class="container">
+    
+    <div class="row">
+
+        <div class="col-8">
+            <header id="encabezado" class="col-8">
+                <h1>Clínica de Mascotas</h1>
+            </header>
+        </div>
+
+        
+        <div class="col-4" id="imagen">
+            <img src="imag/images.png" class="imgRedonda" alt="Clinica">
+        </div>
+     
+    </div>
+
+     
+
+    <div class="row">
+        <nav id="navegador" class="col-12">
+            <ul>
+                <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+                <li class="list-inline-item"><a href="#">Listar Propietarios</a></li>
+                <li class="list-inline-item"><a href="#">Agregar Mascotas</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="row">
+        <h4 class="col-12">Agregar Mascotas</h4>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+          <table id="lista" class="col-12" class="table table-bordered table-hover table-striped table-responsive">
+                <h3>Listado de Propietarios</h3> 
+                <tr>
+                    <td>Nombres</td>
+                    <td>Apellidos</td>
+                    <td>Dirección</td>
+                    <td>Teléfono</td>
+                    <td>Opción</td> 
+                </tr>
+            </table>  
+
+        </div>
+        
+        <div class="col-4">
+            <H5>Agregar Propietario</H5>
+          <form class="form" role="form" autocomplete="off">
+            <div class="form-group row">
+              <label class="col-lg-3 col-form-label form-control-label">Nombre</label>
+              <div class="col-lg-9">
+                <input id="nombre" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-lg-3 col-form-label form-control-label">Apellido</label>
+              <div class="col-lg-9">
+                <input id="apellido" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label  class="col-lg-3 col-form-label form-control-label">Dirección</label>
+              <div class="col-lg-9">
+                <input id="direccion" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-lg-3 col-form-label form-control-label">teléfono</label>
+              <div class="col-lg-9">
+                <input id="telefono" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-12 text-center">
+                <input id="add" type="button" class="btn btn-success"
+                  value="Agregar">
+              </div>
+            </div>
+          </form>
+
+          <div id="formOculto">
+                <h5>Agrega Mascota</h5>
+
+                <div id="propietario">
+               
+                </div>
+                <form class="form" role="form" autocomplete="off">
+                    <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label">Nombre</label>
+                      <div class="col-lg-9">
+                        <input id="nombremascota" class="form-control" type="text">
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label">Tipo</label>
+                      <div class="col-lg-9">
+                        <!-- <input id="tipo" class="form-control" type="text"> -->
+                        <select id="tipo" class="form-control" type="text" >
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                      <label  class="col-lg-3 col-form-label form-control-label">F/N</label>
+                      <div class="col-lg-9">
+                        <input id="fechanacimiento" class="form-control" type="date">
+                      </div>
+                    </div>
+            
+                    <div class="form-group row">
+                      <div class="col-lg-12 text-center">
+                        <input id="add2" type="button" class="btn btn-success"
+                          value="Agregar">
+                      </div>
+                    </div>
+                </form>  
+
+                <table id="lista2" class="col-12" class="table-responsive">
+               
+                    <tr >
+                        <td scope="row">Nombre</td>
+                        <td scope="row">Tipo</td>
+                        <td scope="row">Fecha Nacimiento</td>
+                    </tr>
+                </table>  
+                <br><br><br>
+
+          </div>
+
+
+        </div>
+     
+    </div>  
+
+</div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/logica.js"></script>
+  </body>
+</html>
